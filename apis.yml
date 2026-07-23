@@ -1,8 +1,26 @@
 aid: bandlab
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bandlab.png
 name: BandLab
-description: 'BandLab is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'BandLab is a cloud-based music creation and social platform where musicians
+  and fans make, collaborate on, publish, and discover music. It pairs a free browser-
+  and mobile-based digital audio workstation (Mix Editor) with a social network for
+  creators, plus sample packs, mastering, distribution, and community features. Part
+  of BandLab Technologies (which also owns Cakewalk/SONAR and other music brands),
+  it is backed by Prosus Ventures. No public developer API, OpenAPI specification, or
+  official client SDK was found during enrichment; the GitHub organization publishes
+  only internal engineering tooling (eslint/stylelint configs, audio libraries). This
+  profile is a company identity record awaiting a documented API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/bandlab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Music
+- Music Production
+- Audio
+- Social
+- Creator Tools
+- DAW
+- Collaboration
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bandlab-domain-security.yml
 - type: Website
   url: https://bandlab.com
+- type: Blog
+  url: https://blog.bandlab.com/
+- type: Support
+  url: https://help.bandlab.com/hc/en-us
+- type: GitHubOrganization
+  url: https://github.com/bandlab
+- type: TermsOfService
+  url: https://blog.bandlab.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://blog.bandlab.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
